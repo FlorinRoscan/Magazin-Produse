@@ -23,12 +23,10 @@ public class Main {
         produse.get(5).vinde(4);
         produse.get(2).vinde(3);
         produse.get(8).vinde(1);
-
+        
         System.out.println("Dupa vanzari:");
-
         afiseazaDetalii(produse);
     }
-
     public static void afiseazaDetalii(List<? extends Produs> produse) {
         for (Produs produs : produse) {
             produs.afiseazaDetalii();
